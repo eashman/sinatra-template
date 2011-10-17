@@ -2,5 +2,6 @@ require 'rubygems'
 require 'bundler'
 Bundler.require
 
-require './my_app'
+$LOAD_PATH.unshift(File.dirname(__FILE__))
+require 'my_app'
 run Sinatra::Application
